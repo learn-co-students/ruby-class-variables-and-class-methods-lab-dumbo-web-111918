@@ -1,7 +1,7 @@
 class Song
 
-  attr_accessor :name, :artist, :genre, :count, :artists, :genres, :genre_count, :artist_count
-
+  attr_accessor :name, :artist, :genre
+  
 ####  class variables  ####
     @@count = 0
     @@artists = []
@@ -52,5 +52,7 @@ class Song
   def self.artist_count
     @@artist_count
   end
+
+  #### can instance methods be used in class methods? and vice versa? instance methods use class varibles?
 
 end
