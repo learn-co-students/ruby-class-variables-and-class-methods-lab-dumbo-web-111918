@@ -1,7 +1,7 @@
 class Song
 
   attr_accessor :name, :artist, :genre
-  
+
 ####  class variables  ####
     @@count = 0
     @@artists = []
@@ -19,13 +19,12 @@ class Song
     @@artists << @artist
     @@genres << @genre
 
-    @@genres = @@genres
+#### some weird if statements...is it better to put in the initialize or in the method itself?
       if @@genre_count.keys.include?(@genre)
         @@genre_count[@genre] += 1
       else @@genre_count[@genre] = 1
     end
 
-    @@artists = @@artists
       if @@artist_count.keys.include?(@artist)
         @@artist_count[@artist] += 1
       else @@artist_count[@artist] = 1
