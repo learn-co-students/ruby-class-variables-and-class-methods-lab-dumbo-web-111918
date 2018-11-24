@@ -57,13 +57,13 @@ describe "Song" do
       expect(Song.count).to eq(3)
     end
   end
-
+######
   describe ".artists" do
     it "is a class method that returns a unique array of artists of existing songs" do 
       expect(Song.artists).to match(["Jay-Z", "Brittany Spears"])
     end 
   end
-
+######
   describe ".genres" do 
     it "is a class method that returns a unique array of genres of existing songs" do 
       expect(Song.genres).to match(["rap", "pop"])
