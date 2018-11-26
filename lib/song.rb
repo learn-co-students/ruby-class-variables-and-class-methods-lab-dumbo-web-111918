@@ -37,7 +37,7 @@ def self.genre_count
       end
     genre_count
   end
-
+  ##Consolidate code blocks!!!!
 
 def self.artist_count
   artist_count = {}
